@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luttan Donuts - Panel de Administrador</title>
+
+    <!-- Conecta el archivo CSS -->
+    <link rel="stylesheet" href="CSS/PanelAdmin.css">
+</head>
+
+<body>
+
+    <!--
+         BARRA LATERAL
+          -->
+
+    <aside class="barra-lateral">
+
+        <!-- LOGO DE LUTTAN -->
+        <div class="marca">
+
+            <!--
+               LOGO
+            -->
+
+            <span class="logo">
+                <img src="Img/Luttan.jpg" alt="Logo de Luttan Donuts">
+            </span>
+
+            <div>
+                <strong>Luttan</strong>
+                <p>Donuts</p>
+            </div>
+
+        </div>
+
+
+        <!-- 
+             INFORMACIÓN DEL USUARIO
+            -->
+
+        <div class="usuario-info">
+
+            <span class="avatar">👩</span>
+
+            <div>
+                <strong>Aixa Sanchez</strong>
+                <p>Administradora · Ver perfil</p>
+            </div>
+
+        </div>
+
+
+        <!-- 
+             MENÚ
+             -->
+
+        <nav class="menu">
+
+            <!-- INICIO -->
+            <a href="#" class="activo">
+                <span>🏠</span>
+                <span>Inicio</span>
+            </a>
+
+            <!-- VENTAS -->
+            <a href="#">
+                <span>🛒</span>
+                <span>Ventas</span>
+            </a>
+
+            <!-- INVENTARIO -->
+            <a href="#">
+                <span>📦</span>
+                <span>Inventario</span>
+            </a>
+
+            <!-- PRODUCTOS -->
+            <a href="#">
+                <span>🍩</span>
+                <span>Productos</span>
+            </a>
+
+            <!-- CLIENTES -->
+            <a href="#">
+                <span>👥</span>
+                <span>Clientes</span>
+            </a>
+
+            <!-- EMPLEADOS -->
+            <a href="#">
+                <span>👔</span>
+                <span>Empleados</span>
+            </a>
+
+            <!-- GASTOS -->
+            <a href="#">
+                <span>💵</span>
+                <span>Gastos</span>
+            </a>
+
+            <!-- CAJA -->
+            <a href="#">
+                <span>💳</span>
+                <span>Caja</span>
+            </a>
+
+            <!-- REPORTES -->
+            <a href="#">
+                <span>📊</span>
+                <span>Reportes</span>
+            </a>
+
+        </nav>
+
+
+        <!-- 
+             CERRAR SESIÓN
+             -->
+
+        <a href="#" class="cerrar-sesion">
+            🔒 Cerrar sesión
+        </a>
+
+    </aside>
+
+
+    <!-- 
+         CONTENIDO PRINCIPAL
+          -->
+
+    <main class="contenido">
+
+
+        <!--
+             ENCABEZADO
+             -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Panel de Administrador</h1>
+
+                <p class="fecha">
+                    Viernes, 15 de agosto de 2026
+                </p>
+
+            </div>
+
+
+            <!-- PARTE DERECHA DEL ENCABEZADO -->
+
+            <div class="topbar-derecha">
+
+                <div class="fecha-hoy">
+                    📅 Hoy: 15 ago 2026
+                </div>
+
+                <span class="campana">
+                    🔔
+                </span>
+
+                <span class="avatar-mini">
+                    👩
+                </span>
+
+            </div>
+
+        </header>
+
+
+
+        <!--    TARJETAS DE ESTADÍSTICAS -->
+
+        <section class="estadisticas">
+
+
+            <!-- VENTAS DEL DÍA -->
+
+            <div class="tarjeta-estadistica">
+
+                <div class="icono-estadistica ventas">
+                    🛒
+                </div>
+
+                <p>Ventas del día</p>
+
+                <h2>$1.842.500</h2>
+
+                <span>
+                    +12% vs ayer
+                </span>
+
+            </div>
+
+
+            <!-- GASTOS DEL DÍA -->
+
+            <div class="tarjeta-estadistica">
+
+                <div class="icono-estadistica gastos">
+                    💰
+                </div>
+
+                <p>Gastos del día</p>
+
+                <h2>$380.000</h2>
+
+                <span>
+                    3 registros
+                </span>
+
+            </div>
+
+
+            <!-- GANANCIAS -->
+
+            <div class="tarjeta-estadistica">
+
+                <div class="icono-estadistica ganancias">
+                    📈
+                </div>
+
+                <p>Ganancias</p>
+
+                <h2>$1.462.500</h2>
+
+                <span>
+                    Neto del día
+                </span>
+
+            </div>
+
+
+            <!-- PEDIDOS -->
+
+            <div class="tarjeta-estadistica">
+
+                <div class="icono-estadistica pedidos">
+                    📋
+                </div>
+
+                <p>Pedidos realizados</p>
+
+                <h2>47</h2>
+
+                <span>
+                    Completados hoy
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!--  FILA DE GRÁFICOS -->
+
+        <section class="fila-graficos">
+
+
+            <!--VENTAS DE LA SEMANA -->
+
+            <div class="tarjeta ventas-semana">
+
+                <div class="titulo-tarjeta">
+
+                    <div>
+
+                        <h2>
+                            Ventas de la semana
+                        </h2>
+
+                        <p>
+                            Semana actual
+                        </p>
+
+                    </div>
+
+                    <button>
+                        Ver más
+                    </button>
+
+                </div>
+
+
+                <!-- GRÁFICO DE BARRAS -->
+
+                <div class="grafico">
+
+                    <div class="barra" style="height: 55%;">
+                    </div>
+
+                    <div class="barra" style="height: 70%;">
+                    </div>
+
+                    <div class="barra" style="height: 45%;">
+                    </div>
+
+                    <div class="barra" style="height: 82%;">
+                    </div>
+
+                    <div class="barra activa" style="height: 100%;">
+                    </div>
+
+                    <div class="barra" style="height: 76%;">
+                    </div>
+
+                    <div class="barra" style="height: 42%;">
+                    </div>
+
+                </div>
+
+
+                <!-- DÍAS -->
+
+                <div class="dias">
+
+                    <span>L</span>
+                    <span>M</span>
+                    <span>X</span>
+                    <span>J</span>
+                    <span>V</span>
+                    <span>S</span>
+                    <span>D</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!--VENTAS POR TIPO DE DONA -->
+
+            <div class="tarjeta tipo-dona">
+
+                <h2>
+                    Por tipo de dona
+                </h2>
+
+
+                <div class="dona-contenedor">
+
+
+                    <!-- GRÁFICO DE DONA -->
+
+                    <div class="dona">
+
+                        <div>
+
+                            <strong>
+                                Ventas
+                            </strong>
+
+                            <small>
+                                por tipo
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LEYENDA -->
+
+                    <div class="leyenda">
+
+                        <p>
+
+                            <span class="punto clasica"></span>
+
+                            Clásica
+
+                            <b>
+                                42%
+                            </b>
+
+                        </p>
+
+
+                        <p>
+
+                            <span class="punto rellena"></span>
+
+                            Rellena
+
+                            <b>
+                                28%
+                            </b>
+
+                        </p>
+
+
+                        <p>
+
+                            <span class="punto glaseada"></span>
+
+                            Glaseada
+
+                            <b>
+                                18%
+                            </b>
+
+                        </p>
+
+
+                        <p>
+
+                            <span class="punto especial"></span>
+
+                            Especial
+
+                            <b>
+                                12%
+                            </b>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PEDIDOS DEL DÍA Y POCO STOCK
+             ================================================= -->
+
+        <section class="fila-inferior">
+
+
+            <!--  PEDIDOS DEL DÍA-->
+
+            <div class="tarjeta">
+
+                <div class="titulo-tarjeta">
+
+                    <h2>
+                        Pedidos del día
+                    </h2>
+
+                    <button>
+                        Ver todos
+                    </button>
+
+                </div>
+
+
+                <!-- PEDIDO 1 -->
+
+                <div class="pedido">
+
+                    <div>
+
+                        <strong>
+                            #V-0047
+                        </strong>
+
+                        <p>
+                            María López
+                        </p>
+
+                    </div>
+
+
+                    <div class="pedido-derecha">
+
+                        <strong>
+                            $85,000
+                        </strong>
+
+                        <span class="completado">
+                            Completado
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PEDIDO 2 -->
+
+                <div class="pedido">
+
+                    <div>
+
+                        <strong>
+                            #V-0046
+                        </strong>
+
+                        <p>
+                            Carlos Ruiz
+                        </p>
+
+                    </div>
+
+
+                    <div class="pedido-derecha">
+
+                        <strong>
+                            $42,000
+                        </strong>
+
+                        <span class="proceso">
+                            En proceso
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PEDIDO 3 -->
+
+                <div class="pedido">
+
+                    <div>
+
+                        <strong>
+                            #V-0045
+                        </strong>
+
+                        <p>
+                            Sofía Reyes
+                        </p>
+
+                    </div>
+
+
+                    <div class="pedido-derecha">
+
+                        <strong>
+                            $128,000
+                        </strong>
+
+                        <span class="completado">
+                            Completado
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PEDIDO 4 -->
+
+                <div class="pedido">
+
+                    <div>
+
+                        <strong>
+                            #V-0044
+                        </strong>
+
+                        <p>
+                            Juan Mora
+                        </p>
+
+                    </div>
+
+
+                    <div class="pedido-derecha">
+
+                        <strong>
+                            $56,500
+                        </strong>
+
+                        <span class="completado">
+                            Completado
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- POCO STOCK -->
+
+            <div class="tarjeta">
+
+                <div class="titulo-tarjeta">
+
+                    <h2>
+                        Poco stock ⚠️
+                    </h2>
+
+                    <button>
+                        Ver inventario
+                    </button>
+
+                </div>
+
+
+                <!-- PRODUCTO 1 -->
+
+                <div class="stock">
+
+                    <div>
+
+                        <strong>
+                            Dona de Fresa
+                        </strong>
+
+                        <p>
+                            Clásica
+                        </p>
+
+                    </div>
+
+
+                    <div class="stock-derecha">
+
+                        <span>
+                            Stock bajo
+                        </span>
+
+                        <small>
+                            Stock: 3 / Mín: 10
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCTO 2 -->
+
+                <div class="stock">
+
+                    <div>
+
+                        <strong>
+                            Dona de Chocolate
+                        </strong>
+
+                        <p>
+                            Clásica
+                        </p>
+
+                    </div>
+
+
+                    <div class="stock-derecha">
+
+                        <span>
+                            Stock bajo
+                        </span>
+
+                        <small>
+                            Stock: 5 / Mín: 10
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCTO 3 -->
+
+                <div class="stock">
+
+                    <div>
+
+                        <strong>
+                            Crema pastelera
+                        </strong>
+
+                        <p>
+                            Insumo
+                        </p>
+
+                    </div>
+
+
+                    <div class="stock-derecha">
+
+                        <span>
+                            Stock bajo
+                        </span>
+
+                        <small>
+                            Stock: 0.5 / Mín: 2
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCTO 4 -->
+
+                <div class="stock">
+
+                    <div>
+
+                        <strong>
+                            Harina premium
+                        </strong>
+
+                        <p>
+                            Insumo
+                        </p>
+
+                    </div>
+
+
+                    <div class="stock-derecha">
+
+                        <span>
+                            Stock bajo
+                        </span>
+
+                        <small>
+                            Stock: 1.2 / Mín: 5
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
