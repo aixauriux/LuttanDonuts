@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luttan Donuts - Iniciar sesión</title>
+    <link rel="stylesheet" href="CSS/InicioSesion.css">
+</head>
+<body>
+
+    <main class="tarjeta">
+        <!-- Logo -->
+        <img src="Img/Luttan.jpg" alt="Logo Luttan Donuts" class="logo">
+
+        <!-- Nombre de la empresa -->
+        <h1>Luttan Donuts</h1>
+
+        <!-- Etiqueta de rol -->
+        <span class="etiqueta">Administrador</span>
+
+        <!-- Subtítulo -->
+        <p class="subtitulo">Acceso exclusivo para administradores</p>
+
+        <!-- Título del formulario -->
+        <h2>Inicio de sesión</h2>
+
+        <!-- Formulario -->
+        <form action="procesar.html" method="GET">
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="correo@luttandonuts.com">
+
+            <label for="clave">Contraseña</label>
+            <input type="password" id="clave" name="clave" placeholder="********">
+
+            <p class="ayuda">Demo: puedes dejar los campos vacíos y hacer clic en Iniciar sesión</p>
+
+            <button type="submit" class="boton-principal">Iniciar sesión</button>
+        </form>
+
+        <!-- Enlace de olvidó contraseña -->
+        <a href="#" class="enlace-olvido">¿Olvidaste tu contraseña?</a>
+
+        <!-- Divisor -->
+        <p class="divisor">¿Ingresar con otro rol?</p>
+
+        <!-- Botones de roles -->
+        <div class="roles">
+            <button class="boton-admin">👤 Administrador</button>
+            <button class="boton-empleado">👤 Empleado</button>
+        </div>
+    </main>
+
+    <!-- Botón de ayuda flotante -->
+    <button class="ayuda-flotante">?</button>
+
+</body>
+</html>
