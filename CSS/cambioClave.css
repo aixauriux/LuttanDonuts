@@ -1,0 +1,303 @@
+/* VARIABLES */
+:root {
+    --color-oscuro: #3a0a20;
+    --color-primario: #e91e63;
+    --color-fondo: #fdf5ef;
+    --color-blanco: #ffffff;
+    --color-texto: #333333;
+    --color-gris: #999999;
+}
+
+/* TODO LO GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;             
+    color: var(--color-texto);
+}
+
+/* BARRA LATERAL */
+.barra-lateral {
+    width: 200px;
+    background-color: var(--color-oscuro);
+    color: white;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* EL LOGO Y EL NOMBREE */
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.marca .logo {
+    width: 45px;               /* 👈 Tamaño fijo del logo */
+    height: 45px;              /* 👈 Mismo alto para que sea cuadrado */
+    object-fit: cover;         /* 👈 No se deforma */
+    border-radius: 8px;        /* 👈 Esquinas redondeadas */
+    background-color: white;   /* 👈 Fondo por si el PNG es transparente */
+    padding: 3px;
+}
+
+.marca strong {
+    font-size: 16px;
+}
+
+.marca p {
+    margin: 0;
+    font-size: 12px;
+    color: #d6b8c5;
+}
+
+/* USUARIO */
+.usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #4d1630;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.avatar {
+    font-size: 24px;
+}
+
+.usuario-info strong {
+    font-size: 13px;
+}
+
+.usuario-info p {
+    margin: 0;
+    font-size: 11px;
+    color: #d6b8c5;
+}
+
+/* MENÚ */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.menu a {
+    color: #e8c8d6;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.menu a:hover {
+    background-color: #4d1630;
+    color: white;
+}
+
+/* CERRAR SESIÓN */
+.cerrar-sesion {
+    margin-top: auto;
+    color: #e8c8d6;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.cerrar-sesion:hover {
+    background-color: #4d1630;
+    color: white;
+}
+
+/* CONTENIDO PRINCIPAL */
+.contenido {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.fecha {
+    font-size: 12px;
+    color: var(--color-gris);
+    margin: 4px 0 0;
+}
+
+.topbar-derecha {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.campana {
+    font-size: 20px;
+}
+
+.avatar-mini {
+    font-size: 20px;
+    background-color: var(--color-oscuro);
+    padding: 4px 8px;
+    border-radius: 50%;
+}
+
+/* TARJETA */
+.tarjeta {
+    background-color: var(--color-blanco);
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);   
+    max-width: 500px;
+}
+
+.tarjeta h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.subtitulo {
+    font-size: 13px;
+    color: var(--color-gris);
+    margin: 6px 0 18px;
+}
+
+/* FORMULARIO */
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fdf0f4;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: var(--color-primario);
+    outline: none;               
+    background-color: white;
+}
+
+.ayuda {
+    font-size: 12px;
+    color: var(--color-gris);
+    margin-top: 12px;
+}
+
+/* BOTONES */
+.botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.boton-guardar,
+.boton-cancelar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;             
+}
+
+.boton-guardar {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.boton-guardar:hover {
+    background-color: #c2185b;
+}
+
+.boton-cancelar {
+    background-color: #fce4ec;
+    color: var(--color-primario);
+}
+
+.boton-cancelar:hover {
+    background-color: #f8bbd0;
+}
+
+/* BOTÓN DE AYUDA FLOTANTE */
+.ayuda-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    body {
+        flex-direction: column;
+    }
+
+    .barra-lateral {
+        width: auto;
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .tarjeta {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .botones {
+        flex-direction: column;
+    }
+
+    .boton-guardar,
+    .boton-cancelar {
+        width: 100%;
+    }
+
+    .marca .logo {
+        width: 38px;
+        height: 38px;
+    }
+}

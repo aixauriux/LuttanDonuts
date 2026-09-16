@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luttan Donuts - Cambiar contraseña</title>
+    <link rel="stylesheet" href="CSS/cambioClave.css">
+</head>
+<body>
+
+    <!-- BARRA LATERAL -->
+    <aside class="barra-lateral">
+
+        <div class="marca">
+    <img src="logo.png" alt="Logo Luttan Donuts" class="logo">
+    <div>
+        <strong>Luttan</strong>
+        <p>Donuts</p>
+    </div>
+</div>
+
+        <div class="usuario-info">
+            <span class="avatar">👩</span>
+            <div>
+                <strong>Aixa Sanchez</strong>
+                <p>Administradora</p>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <a href="#">🏠 Inicio</a>
+            <a href="#">💰 Ventas</a>
+            <a href="#">📦 Inventario</a>
+            <a href="#">🍩 Productos</a>
+            <a href="#">👥 Clientes</a>
+            <a href="#">👔 Empleados</a>
+            <a href="#">💵 Gastos</a>
+            <a href="#">💳 Caja</a>
+            <a href="#">📊 Reportes</a>
+        </nav>
+
+        <a href="#" class="cerrar-sesion">🚪 Cerrar sesión</a>
+
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenido">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+            <div>
+                <h1>Cambiar contraseña</h1>
+                <p class="fecha">Viernes, 15 de agosto de 2026</p>
+            </div>
+            <div class="topbar-derecha">
+                <span class="campana">🔔</span>
+                <span class="avatar-mini">👩</span>
+            </div>
+        </header>
+
+        <!-- TARJETA PRINCIPAL -->
+        <section class="tarjeta">
+
+            <h2>Actualiza tu contraseña</h2>
+            <p class="subtitulo">Por seguridad, te recomendamos cambiar tu contraseña cada 3 meses.</p>
+
+            <form action="procesar.html" method="GET">
+
+                <label for="actual">🔒 Contraseña actual</label>
+                <input type="password" id="actual" name="actual" placeholder="Escribe tu contraseña actual">
+
+                <label for="nueva">🔑 Contraseña nueva</label>
+                <input type="password" id="nueva" name="nueva" placeholder="Mínimo 6 caracteres">
+
+                <label for="confirmar">🔁 Confirmar contraseña nueva</label>
+                <input type="password" id="confirmar" name="confirmar" placeholder="Repite la contraseña nueva">
+
+                <p class="ayuda">La contraseña debe tener mínimo 6 caracteres, una mayúscula y un número.</p>
+
+                <div class="botones">
+                    <button type="submit" class="boton-guardar">💾 Guardar cambios</button>
+                    <button type="reset" class="boton-cancelar">✖ Cancelar</button>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- BOTÓN DE AYUDA FLOTANTE -->
+    <button class="ayuda-flotante">?</button>
+
+</body>
+</html>
