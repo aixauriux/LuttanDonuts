@@ -1,0 +1,199 @@
+
+/* VARIABLES */
+:root {
+    --color-primario: #e91e63;
+    --color-acento: #ff9800;
+    --color-fondo: #fce4ec;
+    --color-blanco: #ffffff;
+    --color-texto: #333333;
+}
+
+/* ESTILOS GENERALES */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TARJETA PRINCIPAL */
+.tarjeta {
+    background-color: var(--color-blanco);
+    max-width: 380px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* LOGO */
+.logo {
+    width: 80px;
+    border-radius: 10px;
+}
+
+/* TÍTULOS */
+h1 {
+    font-size: 24px;
+    color: var(--color-texto);
+    margin: 10px 0 6px;
+}
+
+h2 {
+    font-size: 18px;
+    color: var(--color-texto);
+    margin-top: 20px;
+}
+
+/* ETIQUETA DE ROL */
+.etiqueta {
+    display: inline-block;
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* SUBTÍTULO */
+.subtitulo {
+    color: #888;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* FORMULARIO */
+form {
+    text-align: left;
+    margin-top: 16px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--color-texto);
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: var(--color-primario);
+    outline: none;
+}
+
+/* TEXTO DE AYUDA */
+.ayuda {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* BOTÓN PRINCIPAL (con degradado) */
+.boton-principal {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-primario);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.boton-principal:hover {
+    background-color: #c2185b;
+}
+
+/* ENLACE OLVIDÓ CONTRASEÑA */
+.enlace-olvido {
+    display: inline-block;
+    color: var(--color-primario);
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 16px;
+}
+
+.enlace-olvido:hover {
+    text-decoration: underline;
+}
+
+/* DIVISOR */
+.divisor {
+    font-size: 12px;
+    color: #999;
+    border-top: 1px solid #eee;
+    padding-top: 14px;
+    margin-top: 18px;
+}
+
+/* BOTONES DE ROLES */
+.roles {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.boton-admin,
+.boton-empleado {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-admin {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.boton-empleado {
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+}
+
+.boton-admin:hover {
+    background-color: #c2185b;
+}
+
+.boton-empleado:hover {
+    background-color: #f8bbd0;
+}
+
+/* BOTÓN FLOTANTE DE AYUDA */
+.ayuda-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
