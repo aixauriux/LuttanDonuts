@@ -1,0 +1,1154 @@
+/* =====================================================
+   COLORES PRINCIPALES
+   ===================================================== */
+
+:root {
+
+    --color-oscuro: #30091e;
+    --color-oscuro-2: #46122f;
+
+    --color-rosa: #ed2f91;
+    --color-rosa-claro: #fff0f7;
+    --color-rosa-muy-claro: #fff7fb;
+
+    --color-fondo: #fffaf7;
+
+    --color-blanco: #ffffff;
+
+    --color-texto: #222222;
+    --color-gris: #888888;
+
+    --color-borde: #f4c7dd;
+
+}
+
+
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: var(--color-fondo);
+
+    color: var(--color-texto);
+
+    display: flex;
+
+}
+
+
+/* =====================================================
+   BARRA LATERAL
+   ===================================================== */
+
+.barra-lateral {
+
+    width: 180px;
+
+    min-height: 100vh;
+
+    background-color: var(--color-oscuro);
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+/* =====================================================
+   MARCA Y LOGO
+   ===================================================== */
+
+.marca {
+
+    height: 68px;
+
+    padding: 15px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    border-bottom: 1px solid #54233e;
+
+}
+
+
+/*
+   ESPACIO PARA LA IMAGEN DEL LOGO
+*/
+
+.logo {
+
+    width: 30px;
+
+    height: 30px;
+
+    background-color: white;
+
+    border-radius: 6px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+}
+
+
+/*
+   IMAGEN DEL LOGO
+*/
+
+.logo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+}
+
+
+/* NOMBRE LUTTAN */
+
+.marca strong {
+
+    font-size: 14px;
+
+}
+
+
+/* TEXTO DONUTS */
+
+.marca p {
+
+    margin: 2px 0 0;
+
+    font-size: 10px;
+
+    color: #f1a7c9;
+
+}
+
+
+/* =====================================================
+   INFORMACIÓN DEL USUARIO
+   ===================================================== */
+
+.usuario-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 17px 18px;
+
+}
+
+
+.avatar {
+
+    width: 32px;
+
+    height: 32px;
+
+    border-radius: 50%;
+
+    background-color: #ed2f91;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 16px;
+
+}
+
+
+.usuario-info strong {
+
+    display: block;
+
+    font-size: 11px;
+
+}
+
+
+.usuario-info p {
+
+    margin: 2px 0;
+
+    color: #d9a9c1;
+
+    font-size: 9px;
+
+}
+
+
+/* =====================================================
+   MENÚ
+   ===================================================== */
+
+.menu {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    padding: 0 10px;
+
+}
+
+
+.menu a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #e9c8d8;
+
+    text-decoration: none;
+
+    padding: 10px 12px;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+}
+
+
+.menu a:hover {
+
+    background-color: var(--color-oscuro-2);
+
+    color: white;
+
+}
+
+
+/* =====================================================
+   OPCIÓN ACTIVA
+   ===================================================== */
+
+.menu a.activo {
+
+    background-color: var(--color-rosa);
+
+    color: white;
+
+    font-weight: bold;
+
+}
+
+
+.menu a.activo::after {
+
+    content: "•";
+
+    margin-left: auto;
+
+    font-size: 18px;
+
+}
+
+
+/* =====================================================
+   CERRAR SESIÓN
+   ===================================================== */
+
+.cerrar-sesion {
+
+    margin-top: auto;
+
+    padding: 20px;
+
+    color: #e8c8d6;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    border-top: 1px solid #54233e;
+
+}
+
+
+.cerrar-sesion:hover {
+
+    background-color: var(--color-oscuro-2);
+
+}
+
+
+/* =====================================================
+   CONTENIDO PRINCIPAL
+   ===================================================== */
+
+.contenido {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+
+/* =====================================================
+   ENCABEZADO
+   ===================================================== */
+
+.topbar {
+
+    height: 69px;
+
+    background-color: white;
+
+    border-bottom: 1px solid var(--color-borde);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 25px;
+
+}
+
+
+.topbar h1 {
+
+    margin: 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+}
+
+
+.fecha {
+
+    margin: 4px 0 0;
+
+    color: #a57991;
+
+    font-size: 9px;
+
+}
+
+
+.topbar-derecha {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.fecha-hoy {
+
+    background-color: var(--color-rosa-claro);
+
+    color: var(--color-rosa);
+
+    padding: 9px 15px;
+
+    border-radius: 8px;
+
+    font-size: 10px;
+
+}
+
+
+.campana {
+
+    font-size: 17px;
+
+}
+
+
+.avatar-mini {
+
+    width: 29px;
+
+    height: 29px;
+
+    background-color: var(--color-oscuro);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   ESTADÍSTICAS
+   ===================================================== */
+
+.estadisticas {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+
+    padding: 22px 25px 10px;
+
+}
+
+
+/* TARJETA DE ESTADÍSTICA */
+
+.tarjeta-estadistica {
+
+    background-color: white;
+
+    border: 1px solid var(--color-borde);
+
+    border-radius: 12px;
+
+    padding: 16px;
+
+    min-height: 105px;
+
+}
+
+
+.tarjeta-estadistica p {
+
+    display: inline-block;
+
+    margin: 0 0 0 8px;
+
+    color: #a66d88;
+
+    font-size: 10px;
+
+}
+
+
+.tarjeta-estadistica h2 {
+
+    margin: 10px 0 5px;
+
+    font-size: 19px;
+
+}
+
+
+.tarjeta-estadistica > span {
+
+    color: #b6819b;
+
+    font-size: 9px;
+
+}
+
+
+/* =====================================================
+   ICONOS DE ESTADÍSTICAS
+   ===================================================== */
+
+.icono-estadistica {
+
+    display: inline-flex;
+
+    width: 28px;
+
+    height: 28px;
+
+    border-radius: 8px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   TARJETAS GENERALES
+   ===================================================== */
+
+.tarjeta {
+
+    background-color: white;
+
+    border: 1px solid var(--color-borde);
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+}
+
+
+/* =====================================================
+   FILA DE GRÁFICOS
+   ===================================================== */
+
+.fila-graficos {
+
+    display: grid;
+
+    grid-template-columns: 1fr 250px;
+
+    gap: 15px;
+
+    padding: 10px 25px;
+
+}
+
+
+/* =====================================================
+   TÍTULOS DE TARJETAS
+   ===================================================== */
+
+.titulo-tarjeta {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.titulo-tarjeta h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 13px;
+
+    margin: 0;
+
+}
+
+
+.titulo-tarjeta p {
+
+    color: #a57991;
+
+    font-size: 9px;
+
+    margin: 5px 0;
+
+}
+
+
+.titulo-tarjeta button {
+
+    border: none;
+
+    background-color: var(--color-rosa-claro);
+
+    color: var(--color-rosa);
+
+    padding: 7px 12px;
+
+    border-radius: 8px;
+
+    font-size: 9px;
+
+    cursor: pointer;
+
+}
+
+
+.titulo-tarjeta button:hover {
+
+    background-color: #fbd6e7;
+
+}
+
+
+/* =====================================================
+   GRÁFICO DE BARRAS
+   ===================================================== */
+
+.grafico {
+
+    height: 90px;
+
+    margin-top: 20px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 6px;
+
+}
+
+
+.barra {
+
+    flex: 1;
+
+    background-color: #fce6f1;
+
+    border-radius: 5px 5px 0 0;
+
+}
+
+
+.barra.activa {
+
+    background-color: var(--color-rosa);
+
+}
+
+
+/* DÍAS DE LA SEMANA */
+
+.dias {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    color: #a57991;
+
+    font-size: 8px;
+
+    margin-top: 5px;
+
+}
+
+
+/* =====================================================
+   GRÁFICO DE DONA
+   ===================================================== */
+
+.tipo-dona h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 13px;
+
+    margin: 0 0 15px;
+
+}
+
+
+.dona-contenedor {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+/* GRÁFICO */
+
+.dona {
+
+    width: 95px;
+
+    height: 95px;
+
+    border-radius: 50%;
+
+    background: conic-gradient(
+
+        #ed2f91 0deg 151deg,
+
+        #f4ad57 151deg 252deg,
+
+        #f4c36b 252deg 317deg,
+
+        #70bd9b 317deg 360deg
+
+    );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+}
+
+
+/* CENTRO BLANCO */
+
+.dona::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 58px;
+
+    height: 58px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+}
+
+
+/* TEXTO DEL CENTRO */
+
+.dona div {
+
+    position: relative;
+
+    text-align: center;
+
+    z-index: 1;
+
+}
+
+
+.dona strong {
+
+    display: block;
+
+    font-size: 9px;
+
+}
+
+
+.dona small {
+
+    font-size: 7px;
+
+    color: #999;
+
+}
+
+
+/* =====================================================
+   LEYENDA
+   ===================================================== */
+
+.leyenda {
+
+    font-size: 8px;
+
+    flex: 1;
+
+}
+
+
+.leyenda p {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin: 7px 0;
+
+}
+
+
+.leyenda b {
+
+    margin-left: auto;
+
+    font-weight: normal;
+
+    color: #a57991;
+
+}
+
+
+/* PUNTOS */
+
+.punto {
+
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 2px;
+
+}
+
+
+.clasica {
+
+    background-color: #ed2f91;
+
+}
+
+
+.rellena {
+
+    background-color: #f4ad57;
+
+}
+
+
+.glaseada {
+
+    background-color: #f4c36b;
+
+}
+
+
+.especial {
+
+    background-color: #70bd9b;
+
+}
+
+
+/* =====================================================
+   FILA INFERIOR
+   ===================================================== */
+
+.fila-inferior {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    padding: 10px 25px 25px;
+
+}
+
+
+/* =====================================================
+   PEDIDOS
+   ===================================================== */
+
+.pedido {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #f5dce8;
+
+}
+
+
+.pedido:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.pedido strong {
+
+    font-size: 10px;
+
+}
+
+
+.pedido p {
+
+    margin: 3px 0 0;
+
+    color: #a57991;
+
+    font-size: 8px;
+
+}
+
+
+.pedido-derecha {
+
+    text-align: right;
+
+}
+
+
+.pedido-derecha > strong {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+}
+
+
+.pedido-derecha span {
+
+    padding: 3px 7px;
+
+    border-radius: 10px;
+
+    font-size: 7px;
+
+}
+
+
+/* PEDIDO COMPLETADO */
+
+.completado {
+
+    background-color: #e5f7eb;
+
+    color: #198754;
+
+}
+
+
+/* PEDIDO EN PROCESO */
+
+.proceso {
+
+    background-color: #fff1d8;
+
+    color: #bd7811;
+
+}
+
+
+/* =====================================================
+   POCO STOCK
+   ===================================================== */
+
+.stock {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #f5dce8;
+
+}
+
+
+.stock:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.stock strong {
+
+    font-size: 10px;
+
+}
+
+
+.stock p {
+
+    margin: 3px 0 0;
+
+    color: #a57991;
+
+    font-size: 8px;
+
+}
+
+
+.stock-derecha {
+
+    text-align: right;
+
+}
+
+
+.stock-derecha span {
+
+    display: inline-block;
+
+    background-color: #fff1d8;
+
+    color: #c28220;
+
+    padding: 4px 7px;
+
+    border-radius: 10px;
+
+    font-size: 7px;
+
+}
+
+
+.stock-derecha small {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: #b27c95;
+
+    font-size: 7px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE - TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .estadisticas {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .fila-graficos {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .fila-inferior {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE - CELULAR
+   ===================================================== */
+
+@media (max-width: 650px) {
+
+    body {
+
+        flex-direction: column;
+
+    }
+
+
+    .barra-lateral {
+
+        width: 100%;
+
+        min-height: auto;
+
+    }
+
+
+    .menu {
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .cerrar-sesion {
+
+        margin-top: 10px;
+
+    }
+
+
+    .topbar {
+
+        height: auto;
+
+        padding: 15px;
+
+        gap: 10px;
+
+        align-items: flex-start;
+
+    }
+
+
+    .topbar-derecha {
+
+        flex-wrap: wrap;
+
+        justify-content: flex-end;
+
+    }
+
+
+    .estadisticas {
+
+        grid-template-columns: 1fr;
+
+        padding: 15px;
+
+    }
+
+
+    .fila-graficos,
+    .fila-inferior {
+
+        padding: 8px 15px;
+
+    }
+
+
+    .dona-contenedor {
+
+        justify-content: center;
+
+    }
+
+}
